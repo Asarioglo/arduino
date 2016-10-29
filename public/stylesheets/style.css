@@ -1,0 +1,44 @@
+html, body {
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.row {
+  display: table-row;
+}
+
+.block, .page-container {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.block {
+  display: table-cell;
+}
+
+.garage-door {
+  background: url("../images/garage_background.png");
+}
+
+a {
+  color: #00B7FF;
+}
+
+.positive_msg {
+  color: #07b085;
+}
+.negative_msg {
+  color: #ed3125;
+}
+.neutral_msg {
+  color: #afafaf;
+}
