@@ -19,4 +19,14 @@ router.get('/house/v1/garage/status', function(req, res, next) {
   }
 });
 
+/* GET home page. */
+router.get('/house/v1/bedroom/multisensor', function(req, res, next) {
+  res.json({
+    'temp': temperature_reading,
+    'humid': humidity_reading,
+    'light': light_reading,
+    'status': multi_sensor_status
+  });
+});
+
 module.exports = router;

@@ -4,41 +4,140 @@ html, body {
   overflow: hidden;
   margin: 0;
   padding: 0;
+  background: url('../images/bg1.png') repeat;
+}
+
+.full-screen-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: auto;
 }
 
 .page-container {
   width: 100%;
   height: 100%;
-  display: table;
-}
-
-.row {
-  display: table-row;
-}
-
-.block, .page-container {
+  display: block;
   text-align: center;
-  vertical-align: middle;
 }
 
-.block {
-  display: table-cell;
+.center-container {
+  position: relative;
+  width: 25vw;
+  height: 25vw;
+  top: calc(50vh - 12.5vw);
+  /*border: 1px solid red;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.garage-door {
-  background: url("../images/garage_background.png");
+.periphery-container-h {
+  position: fixed;
+  width: 14vw;
+  height: 14vw;
+  top: calc(50vh - 7vw);
 }
 
-a {
-  color: #00B7FF;
+.periphery-container-v {
+  position: fixed;
+  width: 14vh;
+  height: 14vh;
+  left: calc(50vw - 7vh);
 }
 
-.positive_msg {
-  color: #07b085;
+.circle-icon {
+  position: relative;
+  width: 70%;
+  height: 70%;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
 }
-.negative_msg {
-  color: #ed3125;
+
+.circle {
+  position: relative;
+  transition: all .2s ease-in-out;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid blue;
+  cursor: pointer;
 }
-.neutral_msg {
-  color: #afafaf;
+
+.circle:hover {
+  transform: scale(1.2);
 }
+
+#garage-container {
+  left: 10vw;
+}
+
+#bedroom-container {
+  right: 10vw;
+}
+
+#livingroom-container {
+  top: 10vh;
+}
+
+#bathroom-container {
+  bottom: 10vh;
+}
+
+.menu-icon-container {
+  position: fixed;
+  width: 25px;
+  height: 30px;
+  margin: 10px;
+  top:0;
+  right: 0;
+  cursor: pointer;
+}
+
+.menu-icon-container > img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.main-menu-container {
+  background-color: rgba(0,0,0,0.95);
+  display: none;
+}
+
+.menu-items-container {
+  position: relative;
+  height: 40%;
+  width: 100%;
+  top: 30%;
+  text-align: center;
+  display: inline-flex;
+}
+
+.main-menu-item {
+  position: relative;
+  width: 40vh;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 120vh) {
+
+  .main-menu-item {
+    width: 25%;
+    height: 25vw;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+/*.main-menu-item {*/
+  /*width: 40vh;*/
+  /*height: 100%;*/
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  /*background-color: rgba(255, 255, 255, 0.4);*/
+/*}*/

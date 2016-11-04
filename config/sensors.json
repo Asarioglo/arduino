@@ -1,5 +1,8 @@
 {
   "garage": {
     "comport": "COM6"
+  },
+  "multisensor": {
+    "comport": "COM5"
   }
 }

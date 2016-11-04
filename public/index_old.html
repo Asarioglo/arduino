@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="javascripts/jquery-3.1.1.min.js"></script>
+    <script src="javascripts/logic.js"></script>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body onload="init()">
+<div class="page-container">
+    <div class="row">
+        <div class="major-section collapsed">
+            <div class="major-section-header"><span class="header-text">Garage</span><span class="collapse-expand"></span></div>
+            <div class="block garage-door">
+                <table class="blockGuts">
+                    <tr class="block-row">
+                        <td class="block-cell">
+                            <h2 class="status-text positive_msg">Garage is Closed</h2>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="major-section collapsed">
+            <div class="major-section-header"><span class="header-text">Bedroom</span><span class="collapse-expand"></span></div>
+            <div class="block bedroom-temp-humidity">
+                <table class="blockGuts">
+                    <tr class="block-row">
+                        <td class="block-cell">
+                            <span class="label">Temperature: </span><span id="bedroom-temp" class="status-text positive_msg">0</span><span class="unit">C&deg;</span>
+                        </td>
+                    </tr>
+                    <tr class="block-row">
+                        <td class="block-cell">
+                            <h2>Humidity: </h2><h2 id="bedroom-humidity" class="status-text positive_msg">0</h2><h2>%</h2>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="block bedroom-light">
+                <table class="blockGuts">
+                    <tr class="block-row">
+                        <td class="block-cell">
+                            <h2>Light</h2><h2 id="bedroom-light" class="status-text positive_msg">0</h2>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
